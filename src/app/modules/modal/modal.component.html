@@ -1,0 +1,9 @@
+<ng-template #content let-modal>
+  <app-modal-header title="Titulo da Modal" (close)="modal.close()"></app-modal-header>
+  <app-modal-content>
+    <p>Texto da modal...</p>
+  </app-modal-content>
+  <app-modal-footer>
+    <button type="button" class="btn btn-info" (click)="modal.close()">Fechar</button>
+  </app-modal-footer>
+</ng-template>

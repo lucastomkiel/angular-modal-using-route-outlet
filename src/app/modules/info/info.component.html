@@ -1,0 +1,12 @@
+<ng-template #content let-modal>
+    <app-modal-header title="Titulo da Info" (close)="modal.close()"></app-modal-header>
+    <app-modal-content>
+      <p>Texto diferente da info...</p>
+    </app-modal-content>
+    <app-modal-footer>
+      <div class="d-flex align-items-center">
+        <p class="m-0 mr-2">Customização no footer</p>
+        <button type="button" class="btn btn-info" (click)="modal.close()">Fechar Info</button>
+      </div>
+    </app-modal-footer>
+  </ng-template>
